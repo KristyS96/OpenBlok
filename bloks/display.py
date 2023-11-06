@@ -27,9 +27,11 @@ def predict_and_show():
     '''
     Results are displayed on the screen.
     Grabs a frame and then predicts the blok.
+
+    TODO:
+        - Adjust for RPI LCD Screen
     '''
     # session_stats = stats.Stats()
-
     # --------------------------- Display Configuration -------------------------- #
     if os.environ.get('DISPLAY', '') == '':
         os.environ.__setitem__('DISPLAY', ':0')

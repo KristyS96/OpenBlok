@@ -9,7 +9,8 @@ import serial
 
 
 try:
-    arduino = serial.Serial(port='/dev/ttyACM0', baudrate=9600, timeout=.3)
+    #Changed from ACM0 to AMA0 for the Raspberry Pi 4
+    arduino = serial.Serial(port='/dev/ttyAMA0', baudrate=9600, timeout=.3)
 except serial.serialutil.SerialException as err:
     print(f"Error starting serial connection: {err}")
 
